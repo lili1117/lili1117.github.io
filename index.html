@@ -85,7 +85,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/03/20/%E2%80%9C%E6%96%87%E7%AB%A0%E2%80%9D/">“文章”</a>
+      <a class="p-name article-title" href="/2023/03/20/%E2%80%9C%E6%96%87%E7%AB%A0%E2%80%9D/">“实验报告”</a>
     </h1>
   
 
@@ -93,11 +93,23 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        
+        <h2 id="实验步骤与内容："><a href="#实验步骤与内容：" class="headerlink" title="实验步骤与内容："></a>实验步骤与内容：</h2><p>首先在网上查找hexo+github搭建个人博客的的教程，之后按照教程逐步进行搭建，具体步骤如下：</p>
+<h3 id="1、准备阶段："><a href="#1、准备阶段：" class="headerlink" title="1、准备阶段："></a>1、准备阶段：</h3><p>1）下载git,node.js，在cmd使用查看Node.js版本命令：node -v,查看Git版本命令：git –version来检验是否安装成功。</p>
+<p>2）使用github账号创建自己的仓库，关键点是仓库名必须是–“用户名.github.io”且必须是public。</p>
+<h3 id="2、本地配置安装hexo："><a href="#2、本地配置安装hexo：" class="headerlink" title="2、本地配置安装hexo："></a>2、本地配置安装hexo：</h3><p>1）本地新建一个文件夹，用来存放Github本地仓库文件的目录，可以命名为blog。</p>
+<p>2）选中文件夹右键选择使用Git Bash Here打开Git命令窗口，输入命令：npm install -g cnpm –registry&#x3D;<a target="_blank" rel="noopener" href="https://registry.npm.taobao.org来连接淘宝服务器,因为从国外服务器下载受网络影响可能出现异常./">https://registry.npm.taobao.org来连接淘宝服务器，因为从国外服务器下载受网络影响可能出现异常。</a></p>
+<p>3）正式开始安装hexo，输入命令：cnpm install -g hexo-cli；初始化Hexo，输入命令：hexo init；启动服务预览，输入命令：hexo s，此时在浏览器输入localhost:4000就可以在本地浏览博客(自带一篇Hello World博客)。输入命令ctrl + c即可终止。</p>
+<p>4）设置ssh：输入命令：cd ~&#x2F;.ssh进入.ssh文件，输入命令：ssh-keygen -t rsa -C ‘注册时的邮箱地址’；之后在C:\用户\用户名目录下找到.ssh文件夹里面的id_rsa.put文件，用记事本打开，复制内容粘贴到github主页头像–&gt;setting–&gt;SSH and GPG keys–&gt;New SSH key–&gt;key框内。输入命令：ssh -T <a href="mailto:&#x67;&#x69;&#x74;&#x40;&#x67;&#105;&#x74;&#x68;&#x75;&#98;&#46;&#99;&#x6f;&#109;">&#x67;&#x69;&#x74;&#x40;&#x67;&#105;&#x74;&#x68;&#x75;&#98;&#46;&#99;&#x6f;&#109;</a>在本地进行验证，输入yes会显示用户名。在本地绑定与Github的用户名和邮箱，输入命令：git config –global user.name “注册时用户名”，输入命令：git config –global user.email “注册时邮箱”。</p>
+<p><img src="file:///C:\Users\Mac\AppData\Local\Temp\ksohtml9396\wps1.jpg" alt="img"></p>
+<h2 id="结论分析与体会："><a href="#结论分析与体会：" class="headerlink" title="结论分析与体会："></a>结论分析与体会：</h2><h3 id="搭建过程种遇到的问题："><a href="#搭建过程种遇到的问题：" class="headerlink" title="搭建过程种遇到的问题："></a>搭建过程种遇到的问题：</h3><p>1、一开始找的两个教程都没有成功搭建，最后在Pages里面没有显示“your site is live at xxxxxx”的框，在浏览器输入链接也显示404，之后询问同学换了一个教程最终很快搭建成功了，主要的差别在于1）新的教程在安装hexo是是从淘宝服务器下载安装的，从国外服务器下由于网络不稳定容易出现异常。2）新的教程安装的上传工具的命令略有不同但效果应该是一样的不影响结果。综上我觉得不成功的原因应该是我的网络问题。</p>
+<p>2、新教程前面非常顺利，在最后一步hexo d部署到github上时开始报错，显示“unable to access ‘<a target="_blank" rel="noopener" href="https://github........’”重复了好几次还是不行,按照网络上的好多方法修改都没有用,有方法说这就是网络不稳定造成的,所以多次尝试最后终于部署成功.所以问题二的原因也是网络问题./">https://github........’”重复了好几次还是不行，按照网络上的好多方法修改都没有用，有方法说这就是网络不稳定造成的，所以多次尝试最后终于部署成功。所以问题二的原因也是网络问题。</a></p>
+<p> 3、在创建自己的github仓库时一开始设成了private，private好像只有付费才可以进行部署，所以又把属性改成了public。</p>
+<p>体会：遇到问题先不要觉得自己从头做错了直接重来一遍，可以利用报错信息先在互联网搜索该问题的产生原因和解决方法，如果实在无法解决，也可以试着换一个教程试试，也许能找到之前失败的原因。</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/03/20/%E2%80%9C%E6%96%87%E7%AB%A0%E2%80%9D/" data-id="clfgerefv000138u703xa0vpx" data-title="“文章”" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2023/03/20/%E2%80%9C%E6%96%87%E7%AB%A0%E2%80%9D/" data-id="clfgerefv000138u703xa0vpx" data-title="“实验报告”" class="article-share-link">Share</a>
       
       
       
@@ -191,7 +203,7 @@
       <ul>
         
           <li>
-            <a href="/2023/03/20/%E2%80%9C%E6%96%87%E7%AB%A0%E2%80%9D/">“文章”</a>
+            <a href="/2023/03/20/%E2%80%9C%E6%96%87%E7%AB%A0%E2%80%9D/">“实验报告”</a>
           </li>
         
           <li>
