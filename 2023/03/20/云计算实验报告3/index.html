@@ -15,7 +15,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="file:///C:/Users/Mac/AppData/Local/Temp/ksohtml9396/wps2.jpg">
 <meta property="article:published_time" content="2023-03-20T00:24:29.000Z">
-<meta property="article:modified_time" content="2023-03-21T12:48:38.626Z">
+<meta property="article:modified_time" content="2023-03-21T13:04:04.354Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="实验报告">
 <meta name="twitter:card" content="summary">
@@ -104,7 +104,7 @@
 <h3 id="2、本地配置安装hexo："><a href="#2、本地配置安装hexo：" class="headerlink" title="2、本地配置安装hexo："></a>2、本地配置安装hexo：</h3><p>1）本地新建一个文件夹，用来存放Github本地仓库文件的目录，可以命名为blog。</p>
 <p>2）选中文件夹右键选择使用Git Bash Here打开Git命令窗口，输入命令来连接淘宝服务器，因为从国外服务器下载受网络影响可能出现异常。</p>
 <p>3）正式开始安装hexo，输入命令：<strong>cnpm install -g hexo-cli</strong>；初始化Hexo，输入命令：<strong>hexo init</strong>；启动服务预览，输入命令：<strong>hexo s</strong>，此时在浏览器输入<strong>localhost:4000</strong>就可以在本地浏览博客(自带一篇Hello World博客)。输入命令<strong>ctrl + c</strong>即可终止。</p>
-<p>4）设置ssh：在刚才打开地Git命令窗口输入命令：<strong>cd ~&#x2F;.ssh</strong>进入.ssh文件，输入命令：<strong>ssh-keygen -t rsa -C ‘注册时的邮箱地址’</strong>；之后在C:\用户\用户名目录下找到.ssh文件夹里面的<strong>id_rsa.put</strong>文件，用记事本打开，复制内容粘贴到<strong>github主页头像–&gt;setting–&gt;SSH and GPG keys–&gt;New SSH key–&gt;key框</strong>内。输入命令：<strong>ssh -T <a href="mailto:&#103;&#x69;&#x74;&#64;&#103;&#x69;&#x74;&#104;&#117;&#x62;&#46;&#x63;&#x6f;&#109;">&#103;&#x69;&#x74;&#64;&#103;&#x69;&#x74;&#104;&#117;&#x62;&#46;&#x63;&#x6f;&#109;</a></strong>在本地进行验证，输入yes会显示用户名。在本地绑定与Github的用户名和邮箱，输入命令：<strong>git config –global user.name “注册时用户名”</strong>，输入命令：git config –global user.email “注册时邮箱”。</p>
+<p>4）设置ssh：在刚才打开地Git命令窗口输入命令：<strong>cd ~&#x2F;.ssh</strong>进入.ssh文件，输入命令：<strong>ssh-keygen -t rsa -C ‘注册时的邮箱地址’</strong>；之后在C:\用户\用户名目录下找到.ssh文件夹里面的<strong>id_rsa.put</strong>文件，用记事本打开，复制内容粘贴到<strong>github主页头像–&gt;setting–&gt;SSH and GPG keys–&gt;New SSH key–&gt;key框</strong>内。输入命令：<strong>ssh -T <a href="mailto:&#x67;&#x69;&#x74;&#x40;&#x67;&#105;&#116;&#104;&#x75;&#x62;&#x2e;&#x63;&#x6f;&#x6d;">&#x67;&#x69;&#x74;&#x40;&#x67;&#105;&#116;&#104;&#x75;&#x62;&#x2e;&#x63;&#x6f;&#x6d;</a></strong>在本地进行验证，输入yes会显示用户名。在本地绑定与Github的用户名和邮箱，输入命令：<strong>git config –global user.name “注册时用户名”</strong>，输入命令：<strong>git config –global user.email “注册时邮箱”</strong>。</p>
 <h3 id="3、上传测试博客"><a href="#3、上传测试博客" class="headerlink" title="3、上传测试博客"></a>3、上传测试博客</h3><p>1）用记事本打开并修改本地仓库目录下**_config.yml**文件，修改文末deploy后面为：</p>
 <p>  <img src="file:///C:\Users\Mac\AppData\Local\Temp\ksohtml9396\wps2.jpg" alt="img"></p>
 <p>2）此时需要安装一个上传工具，输入命令：<strong>cnpm install hexo-deployer-git</strong>。</p>
